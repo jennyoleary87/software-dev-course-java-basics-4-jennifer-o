@@ -1,3 +1,4 @@
+// 06/04/2025
 package org.example;
 
 import java.sql.SQLOutput;
@@ -26,9 +27,9 @@ public class CollectionExercises {
         // Create and return an array of strings with the given size (from the parameter)
         // Use a loop to set every element to "apple"
         // Replace the line below with your implementation
-        String[] fruitSize = new String[3];
+        String[] fruitSize = new String[size];
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < size; i++) {
             fruitSize[i] = ("apple");
         }
         return fruitSize;
@@ -65,6 +66,9 @@ public class CollectionExercises {
         // Create and return an ArrayList of strings with the given values
         // Replace the line below with your implementation
         ArrayList<String> fruits = new ArrayList<>();
+        fruits.add(fruit1);
+        fruits.add(fruit2);
+        fruits.add(fruit3);
         return fruits;
     }
 
@@ -86,13 +90,18 @@ public class CollectionExercises {
         // Return the value associated with the key "apple" in the given map, using the get method
         // Replace the line below with your implementation
 
-        System.out.println(fruitMap.get("apple"));
-        return null;
+        return fruitMap.get("apple");
+//        return null;
     }
 
     public HashSet<String> makeFruitSet(String fruit1, String fruit2, String fruit3) {
         // Create and return a HashSet of strings with the given values
         // Replace the line below with your implementation
-        return null;
+        HashSet<String> fruits = new HashSet<>();
+        fruits.add(fruit1);
+        fruits.add(fruit2);
+        fruits.add(fruit3);
+        return fruits;
+//        return null;
     }
 }
